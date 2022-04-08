@@ -1,5 +1,5 @@
 html {
-    border-left: 5px lightgray;
+    border-left: 5px solid lightgray;
 }
 
 body {
@@ -31,7 +31,50 @@ footer {
 }
 
 h1 {
+    margin: 0;
     color: tomato;
+    font-size: 70px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 35px;
+}
+
+time {
+    font-size: 50px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+h5 > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-weight: 800;
+    color: tomato;
+}
+
+h5 {
+    color: lightgray;
+}
+
+article {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2rem;
+}
+
+article p::first-letter {
+    font-size: 500%;
+    margin: -10px 10px -10px 10px;
+    padding: 0;
+    float: left;
 }
 
 img {
@@ -41,11 +84,23 @@ img {
 .header > ul {
     padding: 0;
     list-style-type: none;
-
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
 }
 
-.footer {
+.header a {
+    color: lightgray;
+}
+
+.footer > ul {
     padding: 0;
     list-style-type: none;
-    
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer a{
+    color: tomato;
 }
